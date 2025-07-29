@@ -8,6 +8,11 @@ li{
     list-style-type: none;
 }
 
+h2,
+h5{
+    margin: 20px 20px;
+}
+
 /*Text*/
 
 .grey{
@@ -19,6 +24,13 @@ li{
 }
 
 /*Generali*/
+
+button{
+    padding: 7px 20px;
+    border-radius: 20px;
+    background-color: #090B11;
+    margin-right:20px;
+}
 
 /*--------------------------------------------------------------*/
 /*Body*/
@@ -47,29 +59,67 @@ body{
     display: flex;
 
     /*DEBUG*/
-    background-color: aqua;
+    background-color: #2f3b50;
 }
 
 .contenuto_main{
     display: flex;
     flex-direction: column;
 
+    background-color: #141922;
     width: 90%;
 }
 
-
-
-
-
 .contenuto{
-    height: 100%;
-    background-color: #566d99;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    background-color: #141922;
+}
+
+.contenuto nav{
+    display: flex;
+    justify-content: center;
+}
+
+.contenuto nav li{
+    margin: 20px 10px;
 }
 
 .banner{
-    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    height: 70px;
     width: 100%;
-    background-color: #2d62ff;
+    background-color: #090B11;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+
+    width: 12%;
+    margin: 10px 20px;
+}
+
+.circle{
+    border-radius: 100px;
+}
+
+figure img{
+    max-width:100%
+}
+
+figcaption{
+    text-align: center;
+    padding: 10px 0px;
+    line-height: 20px;
+}
+
+.contenuto_over{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*--------------------------------------------------------------*/
