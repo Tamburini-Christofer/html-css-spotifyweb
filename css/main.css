@@ -231,7 +231,50 @@ footer{
     margin: 0px 40px;
 }
 
+}
+
+/*Smartphone 640px*/
+
+@media screen and (min-width:640px) and (max-width:877px){
+
+        .contenuto nav{
+    flex-wrap: wrap;
+    margin: 0px 40px;
+}
+
+    .card{
+    width: 202px;
 
 }
 
-/*Smartphone*/
+    .icon{
+    margin-left: 0px;
+}
+
+.player{
+    width: 154px;
+}
+}
+
+@media screen and (min-width:550px) and (max-width:639px){
+    .card{
+    width: 215px;
+
+}
+
+       .contenuto nav{
+    flex-wrap: wrap;
+    margin: 0px 20px;
+}
+
+.barra_sx{
+    width: 60px;
+}
+
+    .icon{
+    margin-left: 0px;
+}
+.player{
+    width: 140px;
+}
+}
