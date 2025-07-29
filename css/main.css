@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*Text*/
+
+.grey{
+    color: grey;
+}
+
+.white{
+    color: white;
+}
+
+/*Generali*/
+
+/*--------------------------------------------------------------*/
+/*Body*/
+
+body{
+
+}
+
+/*Barra sx*/
+
+.barra_sx{
+    width: 20%;
+    /*DEBUG*/
+    background-color: #000000;
+}
+
+#logo{
+    max-width: 70%;
+    padding: 20px;
+}
+
+/*--------------------------------------------------------------*/
+/*Main*/
+
+.contenitore_main{
+    display: flex;
+
+    /*DEBUG*/
+    background-color: aqua;
+}
+
+.contenuto_main{
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+}
+
+
+
+
+
+.contenuto{
+    height: 100%;
+    background-color: #566d99;
+}
+
+.banner{
+    height: 100px;
+    width: 100%;
+    background-color: #2d62ff;
+}
+
+/*--------------------------------------------------------------*/
+/*Footer*/
+
+footer{
+    height: 70px;
+    background-color: #d73535;
+}
+
+.contenitore_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*--------------------------------------------------------------*/
+/*Responsive*/
+
+/*Tablet*/
+
+/*Smartphone*/
