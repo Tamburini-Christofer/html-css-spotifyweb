@@ -53,6 +53,7 @@ button{
     margin-right:20px;
 }
 
+
 /*****************************************************************/
 /*hover*/
 
@@ -134,7 +135,7 @@ body{
 }
 
 .installa_app{
-    margin-top:50px;
+    margin-top:250px;
 }
 
 .installa_app span i{
@@ -152,13 +153,13 @@ body{
     padding: 0px
 }
 
-
 /*--------------------------------------------------------------*/
 /*Main*/
 
 .contenitore_main{
     display: flex;
 
+    position: relative;
     /*DEBUG*/
     background-color: #2f3b50;
 }
@@ -172,7 +173,8 @@ body{
 }
 
 .contenuto{
-    height: calc(100vh - 140px);
+    padding-top: 100px;
+    height: calc(100vh - 70px);
     overflow-y: auto;
     background-color: #141922;
 }
@@ -191,8 +193,11 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
-    opacity: 0.4;
 
+    position: absolute;
+    opacity: 0.5;
+    left: 0%;
+    top: 0%;
     height: 70px;
     width: 100%;
     background-color: #090B11;
@@ -274,7 +279,6 @@ footer{
 .small{
     width: 100px;
     margin: 0 10px;
-
 }
 
 .relative{
@@ -319,20 +323,29 @@ footer{
     margin: 0px 40px;
 }
 
+.installa_app {
+  margin-top: 120px;
+}
+
+
+
 }
 
 /*Smartphone 640px*/
 
 @media screen and (min-width:640px) and (max-width:877px){
 
-        .contenuto nav{
+    .contenuto nav{
     flex-wrap: wrap;
     margin: 0px 40px;
 }
 
     .card{
-    width: 202px;
+    width: 206px;
+}
 
+.installa_app {
+  margin-top: 120px;
 }
 
     .icon{
@@ -342,6 +355,12 @@ footer{
 .player{
     width: 154px;
 }
+
+.green{
+    width: 15%;
+}
+
+
 }
 
 @media screen and (min-width:550px) and (max-width:640px){
@@ -356,7 +375,7 @@ footer{
 }
 
 .barra_sx{
-    width: 60px;
+    width: 65px;
 }
 
     .icon{
@@ -368,6 +387,13 @@ footer{
 
 .poof li span,
 .poof li i
+{
+    display: none;
+}
+
+.installa_app div span,
+.installa_app span,
+.installa_app hr
 {
     display: none;
 }
@@ -386,4 +412,49 @@ footer{
 #logo{
     display: none;
 }
+
+.center {
+  width: 154px;
+}
+
+.contenitore_footer div i {
+  margin-left: 3px;
+}
+
+.small {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.green_small {
+    width: 5%;
+    transform: translate(62px, 0px);
+}
+
+.green{
+    width: 20%;
+    transform: translate(0px, -18px);
+}
+
+  .barra_sx div ul li img {
+    width: 25px;
+  }
+
+   .barra_sx div ul li img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .installa_app div img,
+  .installa_app i{
+  width: 100%;
+}
+
+.barra_sx div {
+  padding: 2px 6px;
+}
+#logo_small {
+    display: block;
+    margin: 8PX;
+  }
 }
