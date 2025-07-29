@@ -1,3 +1,5 @@
+/*Generali*/
+
 *{
     margin: 0;
     padding: 0;
@@ -13,10 +15,15 @@
     align-items: center;
 }
 
-
 li{
     list-style-type: none;
 }
+
+.pointer li span{
+    cursor: pointer;
+}
+
+/*Titoli*/
 
 h4{
     margin-bottom: 10px;
@@ -37,7 +44,7 @@ h5{
     color: white;
 }
 
-/*Generali*/
+/*button*/
 
 button{
     padding: 7px 20px;
@@ -50,11 +57,12 @@ button{
 /*Body*/
 
 body{
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
     font-size: 14px;
 }
 
 .wrapper{
-    height: 100vh;
+    height: calc(100vh - 70px);
 }
 
 /*Barra sx*/
@@ -70,10 +78,12 @@ body{
     padding: 20px;
 }
 
+#logo_small{
+    display: none;
+}
 .barra_sx div ul li img{
     width: 10%;
-    margin-right: 5px
-    
+    margin-right: 5px 
 }
 
 .barra_sx div ul{
@@ -83,7 +93,6 @@ body{
 .big_icon{
     font-size:  30px;
 }
-
 
 /*--------------------------------------------------------------*/
 /*Main*/
@@ -104,7 +113,7 @@ body{
 }
 
 .contenuto{
-    height: calc(100vh - 70px);
+    height: calc(100vh - 140px);
     overflow-y: auto;
     background-color: #141922;
 }
@@ -256,7 +265,7 @@ footer{
 }
 }
 
-@media screen and (min-width:550px) and (max-width:639px){
+@media screen and (min-width:550px) and (max-width:640px){
     .card{
     width: 215px;
 
@@ -276,5 +285,26 @@ footer{
 }
 .player{
     width: 140px;
+}
+
+.poof li span,
+.poof li i
+{
+    display: none;
+}
+
+.barra_sx div ul li img{
+    width: 35px;
+    margin-right: 5px 
+}
+
+#logo_small{
+    display: block;
+    width: 35px;
+    margin: 10PX;
+}
+
+#logo{
+    display: none;
 }
 }
