@@ -37,21 +37,22 @@
                         <!--Barra sinistra delle voci-->
 
                         <nav class="margin_top_list">
-                            <ul class="grey poof pointer">
-                                <li><img src="img/home.svg" alt=""><span>home</span></li>
-                                <li><img src="img/search.svg" alt=""><span>cerca</span></li>
-                                <li><img src="img/libreria.svg" alt=""><span>tua libreria</span></li>
+                            <ul class="grey poof hover_li">
+                                <li><img src="img/home.svg" alt=""><span class="white">Home</span></li>
+                                <li><img src="img/search.svg" alt=""><span>Cerca</span></li>
+                                <li><img src="img/libreria.svg" alt=""><span>Tua libreria</span></li>
                             </ul>
                     </div>
                     <div>
 
                         <!--Lista playlist-->
 
-                        <ul class="grey margin_top_list poof pointer">
+                        <ul class="grey margin_top_list poof hover_li">
                             <li>
-                                <h4 class="white"><span>Playlist</span></h4>
+                                <h4 class="white"><span>PLAYLIST</span></h4>
                             </li>
                             <li><i class="fa-solid fa-square-plus big_icon"></i><span> Crea Playlist</span></li>
+                            <li><span>Nome Playlist</span></li>
                             <li><span>Nome Playlist</span></li>
                             <li><span>Nome Playlist</span></li>
                             <li><span>Nome Playlist</span></li>
@@ -62,11 +63,16 @@
                         </nav>
 
                         <!--Account-->
+                        <div class="grey installa_app">
+                            <span class="hover"><i class="fa-solid fa-circle-down "></i>installa app</span>
+                            <hr>
+                            <div>
+                                <img src="img/profile.svg" alt="">
+                                <span class="white">John Doe</span>
+                            </div>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div>
-                        utente
-                    </div>
                 </div>
 
                 <!--Colonna destra contenuto-->
@@ -75,13 +81,13 @@
 
                 <div class="contenuto_main">
                     <div class="banner">
-                        <button class="white">EFFETTUA L'UPGRADE</button>
+                        <button class="white scale">EFFETTUA L'UPGRADE</button>
                     </div>
 
                     <!--Menù-->
 
                     <div class="contenuto">
-                        <nav class="grey">
+                        <nav class="grey hover_li">
                             <li>IN EVIDENZA</li>
                             <li>PODCAST</li>
                             <li>CLASSIFICHE</li>
@@ -200,7 +206,6 @@
                                             <figcaption>
                                                 <span class="white">Ludovico Einaudi</span>
                                             </figcaption>
-
                                     </div>
                                 </div>
                             </div>
@@ -219,11 +224,11 @@
                 <img src="img/sinister.jpeg" alt="">
                 <div>
                     <h4 class="white ">Sinister</h4>
-                    <h5 class="grey">Brano nome</h5>
+                    <h5 class="grey hover_sub">Brano nome</h5>
                 </div>
                 <div class="grey icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                    <i class="fa-regular fa-heart hover"></i>
+                    <i class="fa-regular fa-folder hover"></i>
                 </div>
             </div>
 
@@ -233,11 +238,16 @@
                 <div class="white center">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-circle-play scale"></i>
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
-                <hr class="player">
+                <div class="relative">
+                    <hr class="player">
+                    <hr class="player green">
+                </div>
+                
+                
                 <div>
                 </div>
             </div>
@@ -249,6 +259,7 @@
                 <i class="fa-solid fa-desktop"></i>
                 <i class="fa-solid fa-volume-high"></i>
                 <hr class="player small">
+                <hr class="player small green_small">
             </div>
         </div>
     </footer>

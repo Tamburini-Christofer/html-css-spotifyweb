@@ -53,6 +53,36 @@ button{
     margin-right:20px;
 }
 
+/*****************************************************************/
+/*hover*/
+
+.scale:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+}
+
+.hover_li li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.hover:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.hover_sub:hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
+.green:hover,
+.green_small:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
 /*--------------------------------------------------------------*/
 /*Body*/
 
@@ -68,14 +98,15 @@ body{
 /*Barra sx*/
 
 .barra_sx{
+    font-size: 13px;
     width: 210px;
     /*DEBUG*/
     background-color: #000000;
 }
 
 #logo{
-    max-width: 70%;
-    padding: 20px;
+    max-width: 60%;
+    margin: 15px auto auto 10px;
 }
 
 #logo_small{
@@ -90,9 +121,37 @@ body{
     padding:10px;
 }
 
+.margin_top_list li{
+    margin-top: 6px;
+}
+
+.barra_sx div{
+    padding:2px 10px;
+}
+
 .big_icon{
     font-size:  30px;
 }
+
+.installa_app{
+    margin-top:50px;
+}
+
+.installa_app span i{
+    margin: 0px 10px 10px 0;
+}
+
+.installa_app div img{
+    background-color: grey;
+    border-radius: 100%;
+    margin-top: 10px;
+    width: 20px;
+}
+
+.installa_app div{
+    padding: 0px
+}
+
 
 /*--------------------------------------------------------------*/
 /*Main*/
@@ -119,6 +178,7 @@ body{
 }
 
 .contenuto nav{
+    margin: 10px 40px;
     display: flex;
     justify-content: center;
 }
@@ -131,6 +191,7 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
+    opacity: 0.4;
 
     height: 70px;
     width: 100%;
@@ -145,11 +206,6 @@ body{
     width: 144px;
     margin: 10px 13px;
 }
-
-.margin_top_list li{
-    margin-top: 5px;
-}
-
 
 .circle{
     border-radius: 100px;
@@ -174,8 +230,13 @@ figcaption{
 /*Footer*/
 
 footer{
+    position: fixed;
+    top: 88%;
+    right: 0%;
+    left: 0%;
     height: 70px;
     background-color: #282828;
+
 }
 
 .contenitore_footer{
@@ -214,6 +275,24 @@ footer{
     width: 100px;
     margin: 0 10px;
 
+}
+
+.relative{
+    position: relative;
+}
+
+.green{
+    width: 30%;
+    background-color: rgb(155, 155, 155);
+    position: absolute;
+    transform: translate(0px, -18px);
+}
+
+.green_small {
+    width: 5%;
+    background-color: rgb(155, 155, 155);
+    position: absolute;
+    transform: translate(83px, 0px);
 }
 
 .center{
