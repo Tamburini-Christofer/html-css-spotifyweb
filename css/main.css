@@ -134,9 +134,9 @@ body{
     font-size:  30px;
 }
 
-.installa_app{
-    margin-top:250px;
-}
+.installa_app {
+    margin-top: 40%;
+  }
 
 .installa_app span i{
     margin: 0px 10px 10px 0;
@@ -196,10 +196,9 @@ body{
 
     position: absolute;
     opacity: 0.5;
-    left: 0%;
     top: 0%;
     height: 70px;
-    width: 100%;
+    width: 85%;
     background-color: #090B11;
 }
 
@@ -308,7 +307,7 @@ footer{
 
 /*Tablet*/
 
-@media screen and (min-width:877px) and (max-width:1440px){
+@media screen and (min-width:877px) and (max-width:1920px){
     
     .D_flex{
     margin-right: 10px;
@@ -323,17 +322,15 @@ footer{
     margin: 0px 40px;
 }
 
-.installa_app {
-  margin-top: 120px;
-}
-
-
-
 }
 
 /*Smartphone 640px*/
 
 @media screen and (min-width:640px) and (max-width:877px){
+
+.installa_app {
+    margin-top: 0%;
+  }
 
     .contenuto nav{
     flex-wrap: wrap;
@@ -345,7 +342,7 @@ footer{
 }
 
 .installa_app {
-  margin-top: 120px;
+  margin-top: 80%;
 }
 
     .icon{
@@ -457,4 +454,8 @@ footer{
     display: block;
     margin: 8PX;
   }
+
+  .installa_app {
+  margin-top: 480%;
+}
 }
