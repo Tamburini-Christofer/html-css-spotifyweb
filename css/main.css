@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+.inline{
+    display: inline;
+}
+
+.D_flex{
+    display: flex;
+    align-items: center;
+}
+
+
 li{
     list-style-type: none;
 }
@@ -35,9 +45,12 @@ button{
 /*--------------------------------------------------------------*/
 /*Body*/
 
-body{
 
+.wrapper{
+    height: 100vh;
 }
+
+
 
 /*Barra sx*/
 
@@ -127,7 +140,7 @@ figcaption{
 
 footer{
     height: 70px;
-    background-color: #d73535;
+    background-color: #282828;
 }
 
 .contenitore_footer{
@@ -135,6 +148,41 @@ footer{
     justify-content: space-between;
     align-items: center;
 
+}
+
+.contenitore_footer div img{
+    margin: 15px;
+    width: 40px;
+}
+
+.contenitore_footer div h5{
+    margin: 0%;
+}
+
+.icon{
+    margin-left: 80px;
+}
+
+.contenitore_footer div i{
+    margin-left: 10px;
+}
+
+.player{
+    width: 300px;
+    border-radius: 20px;
+    height: 3px;
+    background-color: rgb(115, 115, 115);
+    margin-top: 15px;
+}
+
+.small{
+    width: 100px;
+    margin: 0 10px;
+
+}
+
+.center{
+    text-align: center;
 }
 
 /*--------------------------------------------------------------*/
