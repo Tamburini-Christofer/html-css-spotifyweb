@@ -387,7 +387,7 @@ footer{
 
 /*Tablet*/
 
-@media screen and (min-width:877px) and (max-width:1920px){
+@media screen and (max-width:877px){
 
     .D_flex{
     margin-right: 10px;
@@ -396,14 +396,19 @@ footer{
     flex-wrap: wrap;
     margin: 0px 40px;
 }
+
+ .card{
+    width: calc(100%/5);
+    margin-left: 20px;
+    }
 }
 
 /*Smartphone 640px*/
 
-@media screen and (min-width:640px) and (max-width:878px){
+@media screen and (max-width:640px){
     .contenuto nav{
     flex-wrap: wrap;
-    margin: 0px 40px;
+    margin: 0px 20px;
     }
 
     .hover_play_small {
@@ -411,9 +416,9 @@ footer{
     }
 
     .card{
-    width: calc(100%/5);
-    margin-left: 20px;
-    }
+    width: 46%;
+    margin-left: 5px ;
+}
 
     .contenuto_over{
     gap: 10px;
@@ -424,7 +429,7 @@ footer{
     }
 }
 
-@media screen and (min-width:550px) and (max-width:641px){
+@media screen and (max-width:550px){
 
     .card{
     width: 46%;
@@ -445,7 +450,7 @@ footer{
 
     .contenuto nav{
     flex-wrap: wrap;
-    margin: 0px 20px;
+    margin: 0px 30px;
     }
 
     .barra_sx{
