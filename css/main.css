@@ -95,6 +95,44 @@ button{
     background-color: green;
 }
 
+.hover_play{
+    display: none;
+    position: absolute;
+
+    width: 100%;
+    height: 62%;
+    background-color: #6d707590;
+}
+
+.hover_play_small{
+    height: 80%;
+}
+
+.hover_play_circle{
+    border-radius: 100%;
+    height: 80%;
+}
+
+.hover_play img{
+    margin: 25%;
+    width: 50%;
+    height: 50%;
+}
+
+.card:hover .hover_play{
+    display:block;
+}
+
+
+.Onclick{
+  color: green;
+  height: 3px;
+  background: green;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
 /*--------------------------------------------------------------*/
 /*Body*/
 
@@ -217,9 +255,11 @@ body{
 }
 
 .card{
+    position: relative;
     display: flex;
     flex-direction: column;
 
+    cursor: pointer;
     width: calc((100%/6) - 30px);
     margin: 10px 1px 10px 20px;
 }
