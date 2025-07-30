@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+time{
+    font-size: 10px;
+}
+
 .inline{
     display: inline;
 }
@@ -215,11 +219,11 @@ body{
 .card{
     display: flex;
     flex-direction: column;
-    flex-shrink: 3;
 
-    width: calc(100%/6);
-    margin: 10px 5px;
+    width: calc((100%/6) - 30px);
+    margin: 10px 1px 10px 20px;
 }
+
 
 .circle{
     border-radius: 100px;
@@ -256,6 +260,8 @@ footer{
     justify-content: space-between;
     align-items: center;
 
+    font-size: 10px;
+
 }
 
 .contenitore_footer div img{
@@ -266,21 +272,20 @@ footer{
 .contenitore_footer div h5{
     margin: 0%;
 }
-
-.icon{
-    margin-left: 80px;
-}
-
 .contenitore_footer div i{
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding-top: 10px;
+
 }
 
 .player{
-    width: 300px;
+    width: 200px;
     border-radius: 20px;
     height: 3px;
     background-color: rgb(115, 115, 115);
-    margin-top: 15px;
+    margin: 10px;
 }
 
 .flex_grow{
@@ -302,17 +307,17 @@ footer{
 }
 
 .green{
-    width: 130px;
+    width: 114px;
     background-color: rgb(155, 155, 155);
     position: absolute;
-    transform: translate(-84px, 0px);
+    transform: translate(-43px, 0px);
 }
 
 .green_small {
-    width: 2%;
+    width: 30px;
     background-color: rgb(155, 155, 155);
     position: absolute;
-    transform: translate(83px, 0px);
+    transform: translate(75px, 0px);
 }
 
 .center{
@@ -330,9 +335,6 @@ footer{
     margin-right: 10px;
 }
 
-    .icon{
-    margin-left: 24px;
-}
 
     .contenuto nav{
     flex-wrap: wrap;
@@ -353,7 +355,6 @@ footer{
     .card{
     width: 206px;
     }
-
 }
 
 @media screen and (min-width:550px) and (max-width:640px){
