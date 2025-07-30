@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-time{
-    font-size: 10px;
+.time{
+    font-size: 9px;
 }
 
 /*link*/
@@ -85,7 +85,7 @@ button{
   color: green;
   height: 3px;
   background: green;
-  width: 50%;
+  width: 40px;
   margin: 0 auto;
   margin-top: 10px;
 }
@@ -236,6 +236,20 @@ body{
     height: calc(100vh - 70px);
     overflow-y: auto;
     background-color: #141922;
+}
+
+.contenuto nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+
+.contenuto nav ul hr{
+    position: absolute;
+    transform: translate(25px, -5px);
 }
 
 .contenuto nav{

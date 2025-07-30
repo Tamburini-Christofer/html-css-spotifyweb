@@ -34,19 +34,19 @@
                         <a href=""></a><img id="logo_small" src="img/logo-small.svg" alt="Logo Spotify">
                     </div>
                     <div>
-
                         <nav class="margin_top_list">
                             <ul class="grey poof hover_li">
                                 <li><a href="#"><img src="img/home.svg" alt=""><span class="white">Home</span></a></li>
                                 <li><a href="#"><img src="img/search.svg" alt=""><span>Cerca</span></a></li>
                                 <li><a href="#"><img src="img/libreria.svg" alt=""><span>Tua libreria</span></a></li>
                             </ul>
+                        </nav>
                     </div>
                     <div>
 
                         <!--Barra sx centrale (playlist)-->
-
                         <ul class="grey margin_top_list poof hover_li">
+
                             <li>
                                 <h4 class="white"><span>PLAYLIST</span></h4>
                             </li>
@@ -70,7 +70,6 @@
                                 <img src="img/profile.svg" alt="Immagine di profilo">
                                 <span class="white poof">John Doe</span>
                             </div>
-                            </nav>
                         </div>
                     </div>
                 </div>
@@ -89,14 +88,16 @@
 
                     <div class="contenuto">
                         <nav class="grey hover_li">
-                            <li><a href="#">IN EVIDENZA</a>
-                                <hr class="Onclick">
-                            </li>
-                            <li><a href="#">PODCAST</a></li>
-                            <li><a href="#">CLASSIFICHE</a></li>
-                            <li><a href="#">GENERI E MOOD</a></li>
-                            <li><a href="#">NUOVE USCITE</a></li>
-                            <li><a href="#">SCOPRI</a></li>
+                            <ul>
+                                <li><a href="#">IN EVIDENZA</a>
+                                    <hr class="Onclick">
+                                </li>
+                                <li><a href="#">PODCAST</a></li>
+                                <li><a href="#">CLASSIFICHE</a></li>
+                                <li><a href="#">GENERI E MOOD</a></li>
+                                <li><a href="#">NUOVE USCITE</a></li>
+                                <li><a href="#">SCOPRI</a></li>
+                            </ul>
                         </nav>
 
                         <!--Main scorrevole-->
@@ -208,6 +209,7 @@
                                         <figcaption>
                                             <span class="white">Daily Mix 1</span>
                                         </figcaption>
+                                    </figure>
                                 </div>
 
                                 <!--Artisti popolari-->
@@ -219,17 +221,17 @@
                                     <!--Lana del Rey-->
 
                                     <div class="contenuto_over">
-                                        <a href="#">
-                                            <figure class="card">
-                                        </a>
-                                        <div class="hover_play hover_play_small hover_play_circle">
-                                            <img src="img/playpng.png" alt="">
-                                        </div>
-                                        <img class="circle" src="img/youg.jpeg"
-                                            alt="La copertina dell'album di Lana del Rey">
-                                        <figcaption>
-                                            <span class="white">Lana del Rey</span>
-                                        </figcaption>
+
+                                        <figure class="card">
+
+                                            <div class="hover_play hover_play_small hover_play_circle">
+                                                <img src="img/playpng.png" alt="">
+                                            </div>
+                                            <img class="circle" src="img/youg.jpeg"
+                                                alt="La copertina dell'album di Lana del Rey">
+                                            <figcaption>
+                                                <span class="white">Lana del Rey</span>
+                                            </figcaption>
                                         </figure>
 
                                         <!--Ludovico Einaudi-->
@@ -243,10 +245,16 @@
                                             <figcaption>
                                                 <span class="white">Ludovico Einaudi</span>
                                             </figcaption>
+                                        </figure>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>                
     </main>
 
     <!--Footer-->
@@ -280,10 +288,10 @@
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
                 <div class="relative">
-                    <time class="white">0:25</time>
+                    <span class="white time">0:25</span>
                     <hr class="player">
                     <hr class="player green">
-                    <time class="white">4:35</time>
+                    <span class="white time">4:35</span>
                 </div>
                 <div>
                 </div>
@@ -300,8 +308,6 @@
             </div>
         </div>
     </footer>
-    </div>
-    </div>
 </body>
 
 </html>
