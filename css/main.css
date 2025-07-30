@@ -69,7 +69,8 @@ button{
 
 .hover_li li a:hover,
 .hover_li li span a:hover,
-.installa_app span:hover
+.installa_app span:hover,
+.icon i:hover
 {
     cursor: pointer;
     color: white;
@@ -78,7 +79,6 @@ button{
 .zoom:hover{
     cursor: pointer;
     transform:scale(1.1);
-
 }
 
 .Onclick{
@@ -138,7 +138,7 @@ button{
 /*Body*/
 
 body{
-    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    font-family: "Montserrat", 'Helvetica Neue', sans-serif;
     font-size: 14px;
 }
 
@@ -220,7 +220,6 @@ body{
     display: flex;
 
     position: relative;
-    /*DEBUG*/
     background-color: #2f3b50;
 }
 
@@ -267,12 +266,12 @@ body{
     flex-direction: column;
 
     cursor: pointer;
-    width: calc((100%/6) - 30px);
-    margin: 10px 1px 10px 20px;
+    width: calc(100%/7);
+    margin-left: 10px ;
 }
 
 .circle{
-    border-radius: 100px;
+    border-radius: 100%;
 }
 
 figure img{
@@ -288,6 +287,7 @@ figcaption{
 .contenuto_over{
     display: flex;
     flex-wrap: wrap;
+    gap: 2.5px;
 }
 
 /*--------------------------------------------------------------*/
@@ -374,7 +374,7 @@ footer{
 /*Tablet*/
 
 @media screen and (min-width:877px) and (max-width:1920px){
-    
+
     .D_flex{
     margin-right: 10px;
 }
@@ -382,25 +382,51 @@ footer{
     flex-wrap: wrap;
     margin: 0px 40px;
 }
-
 }
 
 /*Smartphone 640px*/
 
-@media screen and (min-width:640px) and (max-width:877px){
-
+@media screen and (min-width:640px) and (max-width:878px){
     .contenuto nav{
     flex-wrap: wrap;
     margin: 0px 40px;
     }
 
+    .hover_play_small {
+    height: 88%;
+    }
+
     .card{
-    width: 206px;
+    width: calc(100%/5);
+    margin-left: 10px ;
+    }
+
+    .contenuto_over{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+    .hover_play {
+    height: 100%;
     }
 }
 
 @media screen and (min-width:550px) and (max-width:640px){
 
+    .card{
+    width: 46%;
+    margin-left: 10px ;
+}
+
+    .hover_play {
+    height: 81%;
+    }
+
+    .hover_play_small{
+    height: 87%;
+}
+    
     .banner{
         width: calc(100vw - 65px);
     }
