@@ -10,6 +10,11 @@
     display: inline;
 }
 
+a{
+    text-decoration: none;
+    color: grey;
+}
+
 .D_flex{
     display: flex;
     align-items: center;
@@ -62,7 +67,9 @@ button{
     transform:scale(1.1);
 }
 
-.hover_li li:hover{
+.hover_li li a:hover,
+.hover_li li span a:hover
+{
     cursor: pointer;
     color: white;
 }
@@ -169,7 +176,7 @@ body{
     flex-direction: column;
 
     background-color: #141922;
-    width: 90%;
+    width: 100%;
 }
 
 .contenuto{
@@ -207,8 +214,8 @@ body{
     flex-direction: column;
     flex-shrink: 3;
 
-    width: 144px;
-    margin: 10px 13px;
+    width: calc(100%/6);
+    margin: 10px 5px;
 }
 
 .circle{
@@ -235,12 +242,10 @@ figcaption{
 
 footer{
     position: fixed;
-    top: 88%;
     right: 0%;
     left: 0%;
     height: 70px;
     background-color: #282828;
-
 }
 
 .contenitore_footer{
@@ -275,20 +280,33 @@ footer{
     margin-top: 15px;
 }
 
+.flex_grow{
+    flex-grow: 1;
+}
+
 .small{
     width: 100px;
     margin: 0 10px;
 }
 
 .relative{
+    display: flex;
+    justify-content: center;
+
     position: relative;
+
+}
+
+.flex_center{
+  flex-shrink: 2;
+  flex-grow: 3;
 }
 
 .green{
-    width: 30%;
+    width: 130px;
     background-color: rgb(155, 155, 155);
     position: absolute;
-    transform: translate(0px, -18px);
+    transform: translate(-84px, 0px);
 }
 
 .green_small {
@@ -349,23 +367,10 @@ footer{
     margin-left: 0px;
 }
 
-.player{
-    width: 154px;
-}
-
-.green{
-    width: 15%;
-}
-
 
 }
 
 @media screen and (min-width:550px) and (max-width:640px){
-    .card{
-    width: 215px;
-
-}
-
        .contenuto nav{
     flex-wrap: wrap;
     margin: 0px 20px;
@@ -377,9 +382,6 @@ footer{
 
     .icon{
     margin-left: 0px;
-}
-.player{
-    width: 140px;
 }
 
 .poof li span,
@@ -416,11 +418,6 @@ footer{
 
 .contenitore_footer div i {
   margin-left: 3px;
-}
-
-.small {
-  width: 70px;
-  margin-right: 20px;
 }
 
 .green_small {
