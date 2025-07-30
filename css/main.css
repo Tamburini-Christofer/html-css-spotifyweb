@@ -106,6 +106,10 @@ body{
 /*Barra sx*/
 
 .barra_sx{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     font-size: 13px;
     width: 210px;
     /*DEBUG*/
@@ -142,7 +146,7 @@ body{
 }
 
 .installa_app {
-    margin-top: 40%;
+    margin-top:  90px;
   }
 
 .installa_app span i{
@@ -157,6 +161,7 @@ body{
 }
 
 .installa_app div{
+    margin-bottom: 10px;
     padding: 0px
 }
 
@@ -180,8 +185,7 @@ body{
 }
 
 .contenuto{
-    padding-top: 100px;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 140px);
     overflow-y: auto;
     background-color: #141922;
 }
@@ -201,11 +205,8 @@ body{
     justify-content: end;
     align-items: center;
 
-    position: absolute;
     opacity: 0.5;
-    top: 0%;
     height: 70px;
-    width: 85%;
     background-color: #090B11;
 }
 
@@ -282,10 +283,11 @@ footer{
 
 .flex_grow{
     flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .small{
-    width: 100px;
+    width: 60px;
     margin: 0 10px;
 }
 
@@ -297,11 +299,6 @@ footer{
 
 }
 
-.flex_center{
-  flex-shrink: 2;
-  flex-grow: 3;
-}
-
 .green{
     width: 130px;
     background-color: rgb(155, 155, 155);
@@ -310,7 +307,7 @@ footer{
 }
 
 .green_small {
-    width: 5%;
+    width: 2%;
     background-color: rgb(155, 155, 155);
     position: absolute;
     transform: translate(83px, 0px);
@@ -346,113 +343,68 @@ footer{
 
 @media screen and (min-width:640px) and (max-width:877px){
 
-.installa_app {
-    margin-top: 0%;
-  }
-
     .contenuto nav{
     flex-wrap: wrap;
     margin: 0px 40px;
-}
+    }
 
     .card{
     width: 206px;
-}
-
-.installa_app {
-  margin-top: 80%;
-}
-
-    .icon{
-    margin-left: 0px;
-}
-
+    }
 
 }
 
 @media screen and (min-width:550px) and (max-width:640px){
-       .contenuto nav{
+
+    .contenuto nav{
     flex-wrap: wrap;
     margin: 0px 20px;
-}
+    }
 
-.barra_sx{
+    .barra_sx{
     width: 65px;
-}
+    }
 
-    .icon{
-    margin-left: 0px;
-}
-
-.poof li span,
-.poof li i
-{
+    .poof li span,
+    .poof li i,
+    .installa_app div span,
+    .installa_app span,
+    .installa_app hr
+    {
     display: none;
-}
+    }
 
-.installa_app div span,
-.installa_app span,
-.installa_app hr
-{
+    #logo{
     display: none;
-}
+    }
 
-.barra_sx div ul li img{
+    .barra_sx div ul li img{
     width: 35px;
     margin-right: 5px 
-}
+    }
 
-#logo_small{
+    #logo_small{
     display: block;
     width: 35px;
-    margin: 10PX;
-}
-
-#logo{
-    display: none;
-}
-
-.center {
-  width: 154px;
-}
-
-.contenitore_footer div i {
-  margin-left: 3px;
-}
-
-.green_small {
-    width: 5%;
-    transform: translate(62px, 0px);
-}
-
-.green{
-    width: 20%;
-    transform: translate(0px, -18px);
-}
-
-  .barra_sx div ul li img {
-    width: 25px;
-  }
+    margin: 8PX;
+    }
 
    .barra_sx div ul li img {
     width: 30px;
     margin-right: 10px;
-  }
+    }
 
-  .installa_app div img,
-  .installa_app i{
-  width: 100%;
+    .installa_app div img,
+    .installa_app i {
+    width: 100%;
+    }
+
+    .barra_sx div {
+    padding: 2px 6px;
+    }
+
+    .installa_app {
+    margin-top: 260px;
 }
 
-.barra_sx div {
-  padding: 2px 6px;
-}
-#logo_small {
-    display: block;
-    margin: 8PX;
-  }
-
-  .installa_app {
-  margin-top: 480%;
-}
 }
