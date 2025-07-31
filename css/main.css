@@ -105,32 +105,24 @@ button{
 
 /*Hover card*/
 
-.card:hover .hover_play{
-    display:block;
+.img_container:hover .hover_play{
+    display:flex;
+    position: relative;
 }
 
 .hover_play{
     display: none;
-    position: absolute;
-
-    width: 100%;
-    height: 66%;
-    background-color: #6d707590;
-}
-
-.hover_play_small{
-    height: 83%;
 }
 
 .hover_play_circle{
     border-radius: 100%;
-    height: 83%;
 }
 
 .hover_play img{
-    margin: 25%;
-    width: 50%;
-    height: 50%;
+    position: absolute;
+    background-color:rgba(20,25,34,0.5) ;
+    width: 100%;
+    padding: 30%;
 }
 
 /*Hover Footer*/
@@ -469,10 +461,6 @@ footer{
     margin: 0px 20px;
     }
 
-    .hover_play_small {
-    height: 88%;
-    }
-
     .card{
     width: 46%;
     margin-left: 5px ;
@@ -480,10 +468,6 @@ footer{
 
     .contenuto_over{
     gap: 10px;
-    }
-
-    .hover_play {
-    height: 100%;
     }
 
     .icon{
@@ -543,14 +527,6 @@ footer{
     margin-left: 10px ;
     }
 
-    .hover_play {
-    height: 81%;
-    }
-
-    .hover_play_small{
-    height: 87%;
-    }
-    
     .banner{
         width: calc(100vw - 65px);
     }
