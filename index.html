@@ -36,17 +36,21 @@
                     <div>
                         <nav class="margin_top_list">
                             <ul class="grey poof hover_li">
-                                <li><a href="#"><img src="img/home.svg" alt=""><span class="white">Home</span></a></li>
+                                <li class="only_relative">
+                                    <hr class="linea_verticale">
+                                    <a href="#"><img src="img/home.svg" alt="">
+                                        <span class="white">Home</span></a>
+                                </li>
                                 <li><a href="#"><img src="img/search.svg" alt=""><span>Cerca</span></a></li>
                                 <li><a href="#"><img src="img/libreria.svg" alt=""><span>Tua libreria</span></a></li>
                             </ul>
                         </nav>
                     </div>
+
+                    <!--Barra sx centrale (playlist)-->
+
                     <div>
-
-                        <!--Barra sx centrale (playlist)-->
                         <ul class="grey margin_top_list poof hover_li playlist">
-
                             <li>
                                 <h4 class="white"><span>PLAYLIST</span></h4>
                             </li>
@@ -66,16 +70,17 @@
                             <li><span><a href="#">Nome Playlist</a></span></li>
                             <li><span><a href="#">Nome Playlist</a></span></li>
                         </ul>
-                        <div class="grey installa_app">
+                    </div>
 
-                            <!--Barra sx fondo (account)-->
+                    <div class="grey installa_app">
 
-                            <i class="fa-solid fa-circle-down"></i> <span class="hover poof">installa app</span>
-                            <hr>
-                            <div>
-                                <img src="img/profile.svg" alt="Immagine di profilo">
-                                <span class="white poof allineamento">John Doe</span>
-                            </div>
+                        <!--Barra sx fondo (account)-->
+
+                        <i class="fa-solid fa-circle-down"></i> <span class="hover poof">installa app</span>
+                        <hr>
+                        <div>
+                            <img src="img/profile.svg" alt="Immagine di profilo">
+                            <span class="white poof allineamento">John Doe</span>
                         </div>
                     </div>
                 </div>
@@ -272,7 +277,7 @@
 
         <div class="contenitore_footer">
 
-            <!--Colonna sinistra-->
+            <!--Colonna Sinistra (brano e icone)-->
 
             <div class="D_flex">
                 <img src="img/sinister.jpeg" alt="Brano riprodotto">
@@ -286,7 +291,7 @@
                 </div>
             </div>
 
-            <!--Player centrale-->
+            <!--Player centrale (player)-->
 
             <div class="flex_grow">
                 <div class="white center">
@@ -296,6 +301,7 @@
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
+
                 <div class="relative">
                     <span class="white time">0:25</span>
                     <hr class="player">
