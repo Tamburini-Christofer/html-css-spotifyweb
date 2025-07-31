@@ -15,6 +15,7 @@
 }
 
 .time{
+    margin-top: 5px;
     font-size: 9px;
 }
 
@@ -50,7 +51,7 @@ h4{
 
 h2,
 h5{
-    margin: 20px 20px;
+    margin: 25px 20px;
 }
 
 .D_flex div h4{
@@ -70,7 +71,7 @@ h5{
 /*button*/
 
 button{
-    padding: 7px 20px;
+    padding: 12px 20px;
     border-radius: 20px;
     background-color: #090B11;
     margin-right:20px;
@@ -105,7 +106,7 @@ button{
 
 /*Hover card*/
 
-.img_container:hover .hover_play{
+.img_container:hover  .hover_play{
     display:flex;
     position: relative;
 }
@@ -259,7 +260,7 @@ body{
 }
 
 .contenuto{
-    padding-top: 70px;
+    padding-top: 83px;
     height: calc(100vh - 70px);
     overflow-y: auto;
     background-color: #141922;
@@ -275,7 +276,7 @@ body{
 
     width: calc(100vw - 181px);
     position: fixed;
-    height: 70px;
+    height: 80px;
     background-color: rgba(9, 11, 17, 0.6);
 }
 
@@ -369,8 +370,8 @@ footer{
 }
 .contenitore_footer div i{
     margin-left: 5px;
-    margin-bottom: 5px;
-    font-size: 16px;
+    margin-bottom: 11px;
+    font-size: 13px;
     padding-top: 10px;
 }
 
@@ -383,6 +384,12 @@ footer{
     background-color: rgb(115, 115, 115);
     margin: 10px;
 }
+
+.flex_grow div i{
+    margin: 5px 10px;
+    font-size: 15px;
+}
+
 
 .flex_grow{
     flex-grow: 1;
@@ -414,7 +421,7 @@ footer{
     width: 30px;
     background-color: rgb(155, 155, 155);
     position: absolute;
-    transform: translate(75px, 0px);
+    transform: translate(64px, 0px);
 }
 
 /*Colonna destra*/
@@ -556,4 +563,12 @@ footer{
     .playlist{
     height: 40px;
     }
-}
+
+    .D_flex {
+    margin-right: 0px;
+    }
+
+
+
+  }
+
