@@ -159,7 +159,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
 
-    font-size: 13px;
+    font-size: 12px;
     width: 210px;
     /*DEBUG*/
     background-color: #000000;
@@ -205,7 +205,7 @@ body{
 /*Barra sx centrale (playlist)*/
 
 .playlist{
-    height:200px;
+    height:50vh;
     overflow-y: auto;
 }
 
@@ -216,7 +216,6 @@ body{
 /*Barra sx fondo (account)*/
 
 .installa_app {
-    margin-top:  70px;
     margin-left: 10px;
 }
 
